@@ -19,3 +19,4 @@ print(f'\nAfter refueling, the first car has a fuel level of {firstCar.fuelLevel
 
 print(listOfCars)
 carSelection = int(input("What car would you like to select? [1] or [2]: "))
+
