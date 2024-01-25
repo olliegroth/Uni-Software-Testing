@@ -6,6 +6,10 @@
 
   <h3 align="center">Software Testing (University Module Work)</h3>
 
+  <p align="center">
+    A collection of Software Testing examples and practise compiled throughout University.
+  </p>
+
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
