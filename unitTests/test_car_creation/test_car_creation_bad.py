@@ -14,26 +14,26 @@ def test_incorrect_car_details():
     assert firstCar.fuelLevel != 0
 
 def test_numPlate_out_of_range():
-    with pytest.raises(Exception) as numPlateError:
+    with pytest.raises(AttributeError) as numPlateError:
         Car("Skoda", "Fabia", "012345678910", 5, 4, 1.2, 50, 102, 50)
     assert str(numPlateError.value) == "Number plate length cannot exceed 10"
 
 def test_doors_out_of_range():
-    with pytest.raises(Exception) as doorsError:
+    with pytest.raises(AttributeError) as doorsError:
         Car("Skoda", "Fabia", "GR07 THO", -1, 4, 1.2, 50, 102, 50)
     assert str(doorsError.value) == "Minimum amount of doors is 0"
 
 def test_wheels_out_of_range():
-    with pytest.raises(Exception) as wheelsError:
+    with pytest.raises(AttributeError) as wheelsError:
         Car("Skoda", "Fabia", "GR07 THO", 5, 2, 1.2, 50, 102, 50)
     assert str(wheelsError.value) == "Minimum amount of wheels is 3"
 
 def test_currentSpeed_out_of_range():
-    with pytest.raises(Exception) as currentSpeedError:
+    with pytest.raises(AttributeError) as currentSpeedError:
         Car("Skoda", "Fabia", "GR07 THO", 5, 4, 1.2, 200, 102, 50)
     assert str(currentSpeedError.value) == "Current speed cannot be more than Max speed"
 
 def test_fuelLevel_out_of_range():
-    with pytest.raises(Exception) as fuelLevelError:
+    with pytest.raises(AttributeError) as fuelLevelError:
         Car("Skoda", "Fabia", "GR07 THO", 5, 4, 1.2, 50, 102, 200)
     assert str(fuelLevelError.value) == "Fuel level (%) cannot exceed 100"
