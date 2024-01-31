@@ -36,7 +36,7 @@ class Car:
             self.fuelLevel = 0
 
     def brake(self, decrease):
-        if decrease <= 0:
+        if decrease <= 0 or decrease > self.maxSpeed:
             return False
 
         if self.currentSpeed - abs(decrease) <= 0:
@@ -45,6 +45,9 @@ class Car:
             self.currentSpeed -= abs(decrease)
 
     def refuel(self, fuelIncrease):
+        if fuelIncrease <= 0 or fuelIncrease > 100:
+            return False
+
         if self.fuelLevel + abs(fuelIncrease) >= 100:
             self.fuelLevel = 100
         else:
