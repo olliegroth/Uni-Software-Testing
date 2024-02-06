@@ -1,4 +1,4 @@
-from car import Car
+from unitTestingPractise.car import Car
 
 def test_car_creation():
     firstCar = Car("Skoda", "Fabia", "GR07 THO", 5, 4, 1.2, 0, 102, 100)

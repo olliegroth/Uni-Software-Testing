@@ -1,4 +1,4 @@
-from car import Car
+from unitTestingPractise.car import Car
 
 def test_brake_past_zero():
     firstCar = Car("Skoda", "Fabia", "GR07 THO", 5, 4, 1.2, 50, 102, 100)
