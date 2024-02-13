@@ -1,4 +1,4 @@
-from unitTestingPractise.car import Car
+from unitTesting.car import Car
 
 def test_accelerate_currentSpeed():
     firstCar = Car("Skoda", "Fabia", "GR07 THO", 5, 4, 1.2, 0, 102, 100)

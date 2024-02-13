@@ -9,4 +9,4 @@ print("\nFirst Car: " f'{ firstCar.make, firstCar.model, firstCar.numPlate, firs
 print("\nSecond Car: " f'{ secondCar.make, secondCar.model, secondCar.numPlate, secondCar.doors, secondCar.wheels, secondCar.engineSize, secondCar.currentSpeed,secondCar.maxSpeed, secondCar.fuelLevel}')
 
 print(listOfCars)
-carSelection = int(input("What unitTestingPractise would you like to select? [1] or [2]: "))
+carSelection = int(input("What unitTesting would you like to select? [1] or [2]: "))

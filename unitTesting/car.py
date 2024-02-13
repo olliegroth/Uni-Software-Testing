@@ -32,7 +32,7 @@ class Car:
     def accelerate(self, increase):
         if self.fuelLevel == 0:
             # EXCEPTION HERE
-            print("The unitTestingPractise has run out of fuel, acceleration not possible")
+            print("The unitTesting has run out of fuel, acceleration not possible")
             return False
 
         if increase <= 0:
