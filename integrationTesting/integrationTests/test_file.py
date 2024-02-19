@@ -22,15 +22,3 @@ def test_book_dog(monkeypatch, create_kennel):
     create_kennel.book_dog(Sam)
 
     assert create_kennel.spaces_left() == 1
-
-def test_remove_dog():
-    pass
-    '''
-    # Create a kennel company
-
-    # The kennel company will need to have at least 1 dog staying with it - facilitate this
-
-    # Remove the dog
-
-    # Check that the overall number of spaces left is correct after the removal
-'''
