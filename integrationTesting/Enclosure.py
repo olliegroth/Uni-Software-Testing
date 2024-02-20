@@ -1,5 +1,3 @@
-from Dog import Dog
-
 class Enclosure:
 
     def __init__(self, number, price, max_capacity):

@@ -1,7 +1,4 @@
-from Dog import Dog
-from Enclosure import Enclosure
-
-class Kennel_Company:
+class KennelCompany:
 
     def __init__(self):
         self.enclosures = self.load_enclosures()
@@ -25,9 +22,9 @@ class Kennel_Company:
         return max_capacity - spaces_occupied
 
     def book_dog(self, dog):
-        encs = self.find_enclosures_with_space()
+        enclosures_with_space = self.find_enclosures_with_space()
 
-        for enclosure in encs:
+        for enclosure in enclosures_with_space:
             if enclosure.check_suitability(dog):
                 enclosure.add_occupant(dog)
                 return True
@@ -44,8 +41,8 @@ class Kennel_Company:
 
     def remove_dog(self, name):
         if self.is_authorised():
-            enclosure = self.find_dog( name )
+            enclosure = self.find_dog(name)
             if enclosure:
-                enclosure.remove_occupant( name )
+                enclosure.remove_occupant(name)
                 return True
         return False
