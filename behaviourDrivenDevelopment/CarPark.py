@@ -1,6 +1,3 @@
-from unitTesting import car
-
-
 class CarPark:
 
     def __init__(self, carCapacity=15):
